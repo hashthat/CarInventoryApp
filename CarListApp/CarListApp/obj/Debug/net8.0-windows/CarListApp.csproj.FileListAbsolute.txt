@@ -1,0 +1,17 @@
+C:\Users\earth\source\repos\CarListApp\CarListApp\bin\Debug\net8.0-windows\CarListApp.exe
+C:\Users\earth\source\repos\CarListApp\CarListApp\bin\Debug\net8.0-windows\CarListApp.deps.json
+C:\Users\earth\source\repos\CarListApp\CarListApp\bin\Debug\net8.0-windows\CarListApp.runtimeconfig.json
+C:\Users\earth\source\repos\CarListApp\CarListApp\bin\Debug\net8.0-windows\CarListApp.dll
+C:\Users\earth\source\repos\CarListApp\CarListApp\bin\Debug\net8.0-windows\CarListApp.pdb
+C:\Users\earth\source\repos\CarListApp\CarListApp\obj\Debug\net8.0-windows\CarListApp.Form1.resources
+C:\Users\earth\source\repos\CarListApp\CarListApp\obj\Debug\net8.0-windows\CarListApp.csproj.GenerateResource.cache
+C:\Users\earth\source\repos\CarListApp\CarListApp\obj\Debug\net8.0-windows\CarListApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\earth\source\repos\CarListApp\CarListApp\obj\Debug\net8.0-windows\CarListApp.AssemblyInfoInputs.cache
+C:\Users\earth\source\repos\CarListApp\CarListApp\obj\Debug\net8.0-windows\CarListApp.AssemblyInfo.cs
+C:\Users\earth\source\repos\CarListApp\CarListApp\obj\Debug\net8.0-windows\CarListApp.csproj.CoreCompileInputs.cache
+C:\Users\earth\source\repos\CarListApp\CarListApp\obj\Debug\net8.0-windows\CarListApp.dll
+C:\Users\earth\source\repos\CarListApp\CarListApp\obj\Debug\net8.0-windows\refint\CarListApp.dll
+C:\Users\earth\source\repos\CarListApp\CarListApp\obj\Debug\net8.0-windows\CarListApp.pdb
+C:\Users\earth\source\repos\CarListApp\CarListApp\obj\Debug\net8.0-windows\CarListApp.genruntimeconfig.cache
+C:\Users\earth\source\repos\CarListApp\CarListApp\obj\Debug\net8.0-windows\ref\CarListApp.dll
+C:\Users\earth\source\repos\CarListApp\CarListApp\obj\Debug\net8.0-windows\CarListApp.Properties.Resources.resources
