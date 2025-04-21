@@ -251,7 +251,7 @@ namespace CarListApp
             // This event was created by double clicking groupBox1. It really does nothing for the application
         }
 
-        private void grpVehicleType_Enter(object sender, EventArgs e) 
+        private void grpVehicleType_Enter(object sender, EventArgs e)
         {
             // these are the vehicle type radio button events I created by double clicking the radiobutton on the GUI
         }
@@ -261,7 +261,7 @@ namespace CarListApp
             // groupbox1, I double clicked while navigating the GUI learning about the ins and outs of the application.
         }
 
-        private void ListOfCars_SelectedIndexChanged(object sender, EventArgs e) 
+        private void ListOfCars_SelectedIndexChanged(object sender, EventArgs e)
         {
             // I double clicked on the ListOfCars list box. Essentially there is an event in code
             // but the list itself is for display purposes and the use of creating objects via Trucks, Cars, SUV's -- 
@@ -281,6 +281,11 @@ namespace CarListApp
                 cmbDrivetrain.Visible = true; // these state that the combination box is visible when the checkbox is checked
                 lblDrivetrain.Visible = true; // the label will show when the user checks the "this is a truck or SUV" checkbox.
             }
+        }
+
+        private void lblTruckType_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

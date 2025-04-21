@@ -63,7 +63,7 @@
             // 
             AddCar.BackColor = SystemColors.Info;
             AddCar.Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            AddCar.Location = new Point(147, 465);
+            AddCar.Location = new Point(147, 508);
             AddCar.Name = "AddCar";
             AddCar.Size = new Size(94, 29);
             AddCar.TabIndex = 0;
@@ -75,7 +75,7 @@
             // 
             ListOfCars.BackColor = SystemColors.InactiveCaption;
             ListOfCars.FormattingEnabled = true;
-            ListOfCars.Location = new Point(479, 143);
+            ListOfCars.Location = new Point(479, 218);
             ListOfCars.Name = "ListOfCars";
             ListOfCars.Size = new Size(580, 284);
             ListOfCars.TabIndex = 1;
@@ -83,14 +83,14 @@
             // 
             // txtMake
             // 
-            txtMake.Location = new Point(117, 143);
+            txtMake.Location = new Point(116, 169);
             txtMake.Name = "txtMake";
             txtMake.Size = new Size(125, 27);
             txtMake.TabIndex = 2;
             // 
             // txtModel
             // 
-            txtModel.Location = new Point(117, 176);
+            txtModel.Location = new Point(116, 202);
             txtModel.Name = "txtModel";
             txtModel.Size = new Size(125, 27);
             txtModel.TabIndex = 2;
@@ -121,7 +121,7 @@
             labMake.AutoSize = true;
             labMake.BackColor = SystemColors.Info;
             labMake.Font = new Font("Ink Free", 10.7999992F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labMake.Location = new Point(43, 146);
+            labMake.Location = new Point(42, 172);
             labMake.Name = "labMake";
             labMake.Size = new Size(56, 22);
             labMake.TabIndex = 3;
@@ -133,7 +133,7 @@
             Model.AutoSize = true;
             Model.BackColor = SystemColors.Info;
             Model.Font = new Font("Ink Free", 10.7999992F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Model.Location = new Point(43, 183);
+            Model.Location = new Point(42, 209);
             Model.Name = "Model";
             Model.Size = new Size(59, 22);
             Model.TabIndex = 3;
@@ -178,7 +178,7 @@
             groupBox1.Controls.Add(rioManual);
             groupBox1.Controls.Add(rioAutomatic);
             groupBox1.Font = new Font("Ink Free", 10.7999992F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            groupBox1.Location = new Point(34, 348);
+            groupBox1.Location = new Point(34, 391);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(207, 111);
             groupBox1.TabIndex = 5;
@@ -217,7 +217,7 @@
             label1.AutoSize = true;
             label1.BackColor = SystemColors.Info;
             label1.Font = new Font("Ink Free", 10.7999992F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(479, 115);
+            label1.Location = new Point(479, 193);
             label1.Name = "label1";
             label1.Size = new Size(199, 22);
             label1.TabIndex = 6;
@@ -242,7 +242,7 @@
             // chkTruckSUV
             // 
             chkTruckSUV.AutoSize = true;
-            chkTruckSUV.Location = new Point(49, 216);
+            chkTruckSUV.Location = new Point(155, 348);
             chkTruckSUV.Name = "chkTruckSUV";
             chkTruckSUV.Size = new Size(170, 24);
             chkTruckSUV.TabIndex = 8;
@@ -256,7 +256,7 @@
             grpVehicleType.Controls.Add(rdoSUV);
             grpVehicleType.Controls.Add(rdoTruck);
             grpVehicleType.Font = new Font("Ink Free", 10.7999992F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            grpVehicleType.Location = new Point(247, 348);
+            grpVehicleType.Location = new Point(247, 391);
             grpVehicleType.Name = "grpVehicleType";
             grpVehicleType.Size = new Size(204, 111);
             grpVehicleType.TabIndex = 9;
@@ -301,16 +301,19 @@
             // lblTruckType
             // 
             lblTruckType.AutoSize = true;
+            lblTruckType.BackColor = SystemColors.Info;
             lblTruckType.Font = new Font("Ink Free", 10.7999992F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblTruckType.Location = new Point(248, 169);
             lblTruckType.Name = "lblTruckType";
             lblTruckType.Size = new Size(102, 22);
             lblTruckType.TabIndex = 10;
             lblTruckType.Text = "TruckType";
+            lblTruckType.Click += lblTruckType_Click;
             // 
             // lblDrivetrain
             // 
             lblDrivetrain.AutoSize = true;
+            lblDrivetrain.BackColor = SystemColors.Info;
             lblDrivetrain.Font = new Font("Ink Free", 10.7999992F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblDrivetrain.Location = new Point(248, 233);
             lblDrivetrain.Name = "lblDrivetrain";
@@ -321,6 +324,7 @@
             // lblCondition
             // 
             lblCondition.AutoSize = true;
+            lblCondition.BackColor = SystemColors.Info;
             lblCondition.Font = new Font("Ink Free", 10.7999992F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblCondition.Location = new Point(248, 289);
             lblCondition.Name = "lblCondition";
@@ -333,7 +337,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(1227, 540);
+            ClientSize = new Size(1227, 580);
             Controls.Add(lblCondition);
             Controls.Add(lblDrivetrain);
             Controls.Add(lblTruckType);
