@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\earth\\source\\repos\\CarListApp\\CarListApp\\CarListApp.csproj": {}
+    "C:\\Users\\earth\\Desktop\\CarInventoryApp\\CarListApp\\CarListApp\\CarListApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\earth\\source\\repos\\CarListApp\\CarListApp\\CarListApp.csproj": {
+    "C:\\Users\\earth\\Desktop\\CarInventoryApp\\CarListApp\\CarListApp\\CarListApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\earth\\source\\repos\\CarListApp\\CarListApp\\CarListApp.csproj",
+        "projectUniqueName": "C:\\Users\\earth\\Desktop\\CarInventoryApp\\CarListApp\\CarListApp\\CarListApp.csproj",
         "projectName": "CarListApp",
-        "projectPath": "C:\\Users\\earth\\source\\repos\\CarListApp\\CarListApp\\CarListApp.csproj",
+        "projectPath": "C:\\Users\\earth\\Desktop\\CarInventoryApp\\CarListApp\\CarListApp\\CarListApp.csproj",
         "packagesPath": "C:\\Users\\earth\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\earth\\source\\repos\\CarListApp\\CarListApp\\obj\\",
+        "outputPath": "C:\\Users\\earth\\Desktop\\CarInventoryApp\\CarListApp\\CarListApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

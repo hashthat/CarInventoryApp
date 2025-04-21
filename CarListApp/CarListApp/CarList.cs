@@ -35,8 +35,13 @@ namespace CarListApp
             Transmission = transmission;
         }
 
-        public string GetDisplayInfo()
+        public virtual string GetDisplayInfo()
         {
+           // I had changed this code to Virtualize the DisplayInfo in order to create portability within the classes.
+           // this returns the values of the CarList class (this class) but it is virtualized so the return can be
+           // virtualized yet overridden by a new constructor from a SubClass. So the Subclass inherits the values of
+           // the CarList class and appends the values of the new variables constructed in the subclass to distinguish
+           // the objects even though they share the same blueprint.
            return $"{Year} {Make} {Model} - {Color} - {Transmission} - ${Price}";
         }
 
