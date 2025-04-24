@@ -49,12 +49,12 @@
             cmbDrivetrain = new ComboBox();
             chkTruckSUV = new CheckBox();
             grpVehicleType = new GroupBox();
-            rdoSUV = new RadioButton();
             rdoTruck = new RadioButton();
             cmbCondition = new ComboBox();
             lblTruckType = new Label();
             lblDrivetrain = new Label();
             lblCondition = new Label();
+            rdoSUV = new RadioButton();
             groupBox1.SuspendLayout();
             grpVehicleType.SuspendLayout();
             SuspendLayout();
@@ -238,6 +238,7 @@
             cmbDrivetrain.Name = "cmbDrivetrain";
             cmbDrivetrain.Size = new Size(151, 28);
             cmbDrivetrain.TabIndex = 7;
+            cmbDrivetrain.SelectedIndexChanged += cmbDrivetrain_SelectedIndexChanged;
             // 
             // chkTruckSUV
             // 
@@ -263,19 +264,6 @@
             grpVehicleType.TabStop = false;
             grpVehicleType.Text = "Vehicle Type";
             grpVehicleType.Enter += grpVehicleType_Enter;
-            // 
-            // rdoSUV
-            // 
-            rdoSUV.AutoSize = true;
-            rdoSUV.Font = new Font("Ink Free", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            rdoSUV.Location = new Point(6, 56);
-            rdoSUV.Name = "rdoSUV";
-            rdoSUV.Size = new Size(59, 23);
-            rdoSUV.TabIndex = 0;
-            rdoSUV.TabStop = true;
-            rdoSUV.Text = "SUV";
-            rdoSUV.UseVisualStyleBackColor = true;
-            rdoSUV.CheckedChanged += rioManual_CheckedChanged;
             // 
             // rdoTruck
             // 
@@ -331,6 +319,19 @@
             lblCondition.Size = new Size(87, 22);
             lblCondition.TabIndex = 10;
             lblCondition.Text = "Condition";
+            // 
+            // rdoSUV
+            // 
+            rdoSUV.AutoSize = true;
+            rdoSUV.Font = new Font("Ink Free", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            rdoSUV.Location = new Point(6, 56);
+            rdoSUV.Name = "rdoSUV";
+            rdoSUV.Size = new Size(59, 23);
+            rdoSUV.TabIndex = 0;
+            rdoSUV.TabStop = true;
+            rdoSUV.Text = "SUV";
+            rdoSUV.UseVisualStyleBackColor = true;
+            rdoSUV.CheckedChanged += rioAutomatic_CheckedChanged;
             // 
             // Form1
             // 
@@ -393,11 +394,11 @@
         private ComboBox cmbDrivetrain;
         private CheckBox chkTruckSUV;
         private GroupBox grpVehicleType;
-        private RadioButton rdoSUV;
         private RadioButton rdoTruck;
         private ComboBox cmbCondition;
         private Label lblTruckType;
         private Label lblDrivetrain;
         private Label lblCondition;
+        private RadioButton rdoSUV;
     }
 }

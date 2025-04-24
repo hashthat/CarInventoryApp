@@ -127,7 +127,22 @@ namespace CarListApp
             CarList vehicle;
 
             // Polymorphism! -- Checking the input of the combination boxes from the user.
-            if (chkTruckSUV.Checked)
+            // Check if it's an SUV first
+            if (rdoSUV.Checked)
+            {
+                if (cmbCondition.SelectedItem == null || cmbDrivetrain.SelectedItem == null)
+                {
+                    MessageBox.Show("Please select the condition and drivetrain of the SUV.");
+                    return;
+                }
+
+                string drivetrain = cmbDrivetrain.SelectedItem?.ToString() ?? "Unknown";
+                string condition = cmbCondition.SelectedItem?.ToString() ?? "Unknown";
+
+                vehicle = new SUVList(make, model, year, price, color, transmission, drivetrain, condition);
+            }
+
+            else if (chkTruckSUV.Checked)
             {
                 if (cmbTruckType.SelectedItem == null || cmbDrivetrain.SelectedItem == null)
                 // this is simply checking whether there is blank space in the checkbox
@@ -146,9 +161,9 @@ namespace CarListApp
             }
             else
             {
-                // if the truck list checkbox is not checked this is the CarList Constructor for a car, which is the baseclass.
                 vehicle = new CarList(make, model, year, price, color, transmission);
             }
+
 
 
 
@@ -232,6 +247,8 @@ namespace CarListApp
             // If the SUV radio button is checked the conditions are visible for the new subclass.
             if (rdoSUV.Checked)
             {
+                cmbDrivetrain.Visible= true;
+                lblDrivetrain.Visible = true;
                 cmbCondition.Visible = true;
                 cmbTruckType.Visible = false;
                 lblCondition.Visible = true;
@@ -284,6 +301,11 @@ namespace CarListApp
         }
 
         private void lblTruckType_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbDrivetrain_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
