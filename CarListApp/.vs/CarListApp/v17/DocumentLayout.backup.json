@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{EA83A7EF-BE8B-47F6-BF31-F2EAD8B58DFD}|CarListApp\\CarListApp.csproj|solutionrelative:carlistapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA83A7EF-BE8B-47F6-BF31-F2EAD8B58DFD}|CarListApp\\CarListApp.csproj|c:\\users\\earth\\desktop\\carinventoryapp\\carlistapp\\carlistapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{EA83A7EF-BE8B-47F6-BF31-F2EAD8B58DFD}|CarListApp\\CarListApp.csproj|C:\\Users\\earth\\Desktop\\CarInventoryApp\\CarListApp\\carlistapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EA83A7EF-BE8B-47F6-BF31-F2EAD8B58DFD}|CarListApp\\CarListApp.csproj|solutionrelative:carlistapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -110,8 +110,7 @@
               "ToolTip": "C:\\Users\\earth\\Desktop\\CarInventoryApp\\CarListApp\\CarListApp\\Form1.cs [Design]",
               "RelativeToolTip": "CarListApp\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T19:29:01.109Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-20T19:29:01.109Z"
             }
           ]
         }
