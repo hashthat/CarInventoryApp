@@ -12,6 +12,7 @@ namespace CarListApp
         {
             InitializeComponent();
 
+
             // The options are hidden by default until the checkbox of a Truck or SUV are selected.
             grpVehicleType.Visible = false;
             cmbDrivetrain.Visible = false;
@@ -249,7 +250,7 @@ namespace CarListApp
             // If the SUV radio button is checked the conditions are visible for the new subclass.
             if (rdoSUV.Checked)
             {
-                cmbDrivetrain.Visible= true;
+                cmbDrivetrain.Visible = true;
                 lblDrivetrain.Visible = true;
                 cmbCondition.Visible = true;
                 cmbTruckType.Visible = false;
@@ -311,5 +312,12 @@ namespace CarListApp
         {
 
         }
+
+        private void ShowCarList_Click(object sender, EventArgs e)
+        {
+            CarShow carShowForm = new CarShow(); // Create a new CarShow form
+            carShowForm.Show(); // Open it non-modally (can interact with both forms)
+        }
+
     }
 }

@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Data.SqlClient;
+using Microsoft.VisualBasic.ApplicationServices;
 
 namespace CarListApp
 {
@@ -16,26 +18,68 @@ namespace CarListApp
         public CarShow()
         {
             InitializeComponent();
+            this.Load += new System.EventHandler(this.CarShow_Load);
+
         }
 
-        private void vehicleData_CellContentClick(object sender, DataGridViewCellEventArgs e)
+
+        private void vehicleData_CellContentClick(object sender, DataGridViewCellEventArgs e) { }
+
+        private void CarShow_Load(object sender, EventArgs e)
         {
-            // connecting to the Database Developed through the tables for the VehicleList.mdf;  
-            string string2connect = @"Data Source=(localdb)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\C:\Users\earth\Desktop\CarInventoryApp\CarListApp\CarListApp\VehicleList.mdf;Integrated Security=True;Connect Timeout=45;";
+            string string2connect = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=VehicleListDB;Integrated Security=True;";
+
+            // string string2connect = @"Data Source=(localdb)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\VehicleListSQL.mdf;Integrated Security=True;Connect Timeout=45;";
+            //string string2connect = @"Data Source=(localdb)/MSSQLLocalDB;AttachDbFilename=C:\Users\earth\Desktop\CarInventoryApp\CarListApp\CarListApp\VehicleListSQL.mdf;Integrated Security=True;Connect Timeout=45;";
             string stringQuery = @"
-SELECT 'Car' AS Make, Model, Year, Price, Color, Transmission FROM [Table(car)]
+SELECT 
+    'Car' AS VehicleType, 
+    Make, 
+    Model, 
+    Year, 
+    Price, 
+    Color, 
+    Transmission AS Extra1, 
+    NULL AS Extra2 
+FROM [Table_Car]
+
 UNION ALL
-SELECT 'Truck', Make, Model, Year, Price, Color, TruckType, Drivetrain FROM [Table(Truck)]
+
+SELECT 
+    'Truck' AS VehicleType, 
+    Make, 
+    Model, 
+    Year, 
+    Price, 
+    Color, 
+    TruckType AS Extra1, 
+    Drivetrain AS Extra2 
+FROM [Table_Truck]
+
 UNION ALL
-SELECT 'SUV', Make, Model, Year, Price, Color, Drivetrain, Condition FROM [Table(SUV)]";
 
-            SqlConnection conn = new SqlConnection(string2connect);
-            SqlDataAdapter adapter = new SqlDataAdapter(stringQuery, conn);
-            DataTable dt = new DataTable();
-            adapter.Fill(dt);
-            vehicleDataGrid.DataSource = dt;
+SELECT 
+    'SUV' AS VehicleType, 
+    Make, 
+    Model, 
+    Year, 
+    Price, 
+    Color, 
+    Drivetrain AS Extra1, 
+    Condition AS Extra2 
+FROM [Table_SUV]";
 
-
+            using (SqlConnection conn = new SqlConnection(string2connect))
+            {
+                conn.Open();
+                using (SqlDataAdapter adapter = new SqlDataAdapter(stringQuery, conn))
+                {
+                    DataTable dt = new DataTable();
+                    adapter.Fill(dt);
+                    vehicleDataGrid.DataSource = dt;
+                }
+            }
         }
+
     }
 }

@@ -49,12 +49,13 @@
             cmbDrivetrain = new ComboBox();
             chkTruckSUV = new CheckBox();
             grpVehicleType = new GroupBox();
+            rdoSUV = new RadioButton();
             rdoTruck = new RadioButton();
             cmbCondition = new ComboBox();
             lblTruckType = new Label();
             lblDrivetrain = new Label();
             lblCondition = new Label();
-            rdoSUV = new RadioButton();
+            ShowCarList = new Button();
             groupBox1.SuspendLayout();
             grpVehicleType.SuspendLayout();
             SuspendLayout();
@@ -63,7 +64,7 @@
             // 
             AddCar.BackColor = SystemColors.Info;
             AddCar.Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            AddCar.Location = new Point(147, 508);
+            AddCar.Location = new Point(155, 508);
             AddCar.Name = "AddCar";
             AddCar.Size = new Size(94, 29);
             AddCar.TabIndex = 0;
@@ -265,6 +266,19 @@
             grpVehicleType.Text = "Vehicle Type";
             grpVehicleType.Enter += grpVehicleType_Enter;
             // 
+            // rdoSUV
+            // 
+            rdoSUV.AutoSize = true;
+            rdoSUV.Font = new Font("Ink Free", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            rdoSUV.Location = new Point(6, 56);
+            rdoSUV.Name = "rdoSUV";
+            rdoSUV.Size = new Size(59, 23);
+            rdoSUV.TabIndex = 0;
+            rdoSUV.TabStop = true;
+            rdoSUV.Text = "SUV";
+            rdoSUV.UseVisualStyleBackColor = true;
+            rdoSUV.CheckedChanged += rioAutomatic_CheckedChanged;
+            // 
             // rdoTruck
             // 
             rdoTruck.AutoSize = true;
@@ -320,18 +334,17 @@
             lblCondition.TabIndex = 10;
             lblCondition.Text = "Condition";
             // 
-            // rdoSUV
+            // ShowCarList
             // 
-            rdoSUV.AutoSize = true;
-            rdoSUV.Font = new Font("Ink Free", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            rdoSUV.Location = new Point(6, 56);
-            rdoSUV.Name = "rdoSUV";
-            rdoSUV.Size = new Size(59, 23);
-            rdoSUV.TabIndex = 0;
-            rdoSUV.TabStop = true;
-            rdoSUV.Text = "SUV";
-            rdoSUV.UseVisualStyleBackColor = true;
-            rdoSUV.CheckedChanged += rioAutomatic_CheckedChanged;
+            ShowCarList.BackColor = SystemColors.Info;
+            ShowCarList.Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ShowCarList.Location = new Point(357, 508);
+            ShowCarList.Name = "ShowCarList";
+            ShowCarList.Size = new Size(94, 29);
+            ShowCarList.TabIndex = 11;
+            ShowCarList.Text = "CarShow";
+            ShowCarList.UseVisualStyleBackColor = false;
+            ShowCarList.Click += ShowCarList_Click;
             // 
             // Form1
             // 
@@ -339,6 +352,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1227, 580);
+            Controls.Add(ShowCarList);
             Controls.Add(lblCondition);
             Controls.Add(lblDrivetrain);
             Controls.Add(lblTruckType);
@@ -400,5 +414,6 @@
         private Label lblDrivetrain;
         private Label lblCondition;
         private RadioButton rdoSUV;
+        private Button ShowCarList;
     }
 }
