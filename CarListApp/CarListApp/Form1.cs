@@ -319,5 +319,16 @@ namespace CarListApp
             carShowForm.Show(); // Open it non-modally (can interact with both forms)
         }
 
+        private void ShowTruckList_Click(object sender, EventArgs e)
+        {
+            TruckShow truckShowForm = new TruckShow(); // Create a new CarShow form
+            truckShowForm.Show(); // Open it non-modally (can interact with both forms)
+        }
+
+        private void ShowSUV_List_Click(object sender, EventArgs e)
+        {
+            ShowSUV showSuvForm = new ShowSUV(); // Create a new CarShow form
+            showSuvForm.Show(); // Open it non-modally (can interact with both forms)
+        }
     }
 }

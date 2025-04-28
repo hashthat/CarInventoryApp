@@ -56,6 +56,8 @@
             lblDrivetrain = new Label();
             lblCondition = new Label();
             ShowCarList = new Button();
+            ShowTruckList = new Button();
+            ShowSUV_List = new Button();
             groupBox1.SuspendLayout();
             grpVehicleType.SuspendLayout();
             SuspendLayout();
@@ -346,12 +348,38 @@
             ShowCarList.UseVisualStyleBackColor = false;
             ShowCarList.Click += ShowCarList_Click;
             // 
+            // ShowTruckList
+            // 
+            ShowTruckList.BackColor = SystemColors.Info;
+            ShowTruckList.Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ShowTruckList.Location = new Point(479, 509);
+            ShowTruckList.Name = "ShowTruckList";
+            ShowTruckList.Size = new Size(94, 29);
+            ShowTruckList.TabIndex = 12;
+            ShowTruckList.Text = "TruckShow";
+            ShowTruckList.UseVisualStyleBackColor = false;
+            ShowTruckList.Click += ShowTruckList_Click;
+            // 
+            // ShowSUV_List
+            // 
+            ShowSUV_List.BackColor = SystemColors.Info;
+            ShowSUV_List.Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ShowSUV_List.Location = new Point(599, 508);
+            ShowSUV_List.Name = "ShowSUV_List";
+            ShowSUV_List.Size = new Size(94, 29);
+            ShowSUV_List.TabIndex = 13;
+            ShowSUV_List.Text = "SUV_Show";
+            ShowSUV_List.UseVisualStyleBackColor = false;
+            ShowSUV_List.Click += ShowSUV_List_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1227, 580);
+            Controls.Add(ShowSUV_List);
+            Controls.Add(ShowTruckList);
             Controls.Add(ShowCarList);
             Controls.Add(lblCondition);
             Controls.Add(lblDrivetrain);
@@ -415,5 +443,7 @@
         private Label lblCondition;
         private RadioButton rdoSUV;
         private Button ShowCarList;
+        private Button ShowTruckList;
+        private Button ShowSUV_List;
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace CarListApp
 {
-    partial class CarShow
+    partial class ShowSUV
     {
         /// <summary>
         /// Required designer variable.
@@ -28,34 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            vehicleDataGrid = new DataGridView();
-            ((System.ComponentModel.ISupportInitialize)vehicleDataGrid).BeginInit();
+            dataGridView1 = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
-            // vehicleDataGrid
+            // dataGridView1
             // 
-            vehicleDataGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            vehicleDataGrid.Location = new Point(3, 4);
-            vehicleDataGrid.Name = "vehicleDataGrid";
-            vehicleDataGrid.RowHeadersWidth = 51;
-            vehicleDataGrid.Size = new Size(785, 443);
-            vehicleDataGrid.TabIndex = 0;
-            vehicleDataGrid.CellContentClick += vehicleDataGrid_CellContentClick;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(7, 1);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(790, 446);
+            dataGridView1.TabIndex = 0;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
-            // CarShow
+            // ShowSUV
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(vehicleDataGrid);
-            Name = "CarShow";
-            Text = "CarShow";
-            ((System.ComponentModel.ISupportInitialize)vehicleDataGrid).EndInit();
+            Controls.Add(dataGridView1);
+            Name = "ShowSUV";
+            Text = "ShowSUV";
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private DataGridView vehicleDataGrid;
+        private DataGridView dataGridView1;
     }
 }
