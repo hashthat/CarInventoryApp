@@ -84,3 +84,6 @@ C:\Users\earth\Desktop\CarInventoryApp\CarListApp\CarListApp\obj\Debug\net8.0-wi
 C:\Users\earth\Desktop\CarInventoryApp\CarListApp\CarListApp\obj\Debug\net8.0-windows\ref\CarListApp.dll
 C:\Users\earth\Desktop\CarInventoryApp\CarListApp\CarListApp\obj\Debug\net8.0-windows\CarListApp.TruckShow.resources
 C:\Users\earth\Desktop\CarInventoryApp\CarListApp\CarListApp\obj\Debug\net8.0-windows\CarListApp.ShowSUV.resources
+C:\Users\earth\Desktop\CarInventoryApp\CarListApp\CarListApp\obj\Debug\net8.0-windows\CarListApp.LoginForm.resources
+C:\Users\earth\Desktop\CarInventoryApp\CarListApp\CarListApp\obj\Debug\net8.0-windows\CarListApp.RegisterForm.resources
+C:\Users\earth\Desktop\CarInventoryApp\CarListApp\CarListApp\obj\Debug\net8.0-windows\CarListApp.VehicleForm.resources

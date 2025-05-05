@@ -4,13 +4,18 @@ using System.Windows.Forms;
 using Microsoft.Data.SqlClient;
 
 
+
 namespace CarListApp
 {
     public partial class Form1 : Form
     {
+        private string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=VehicleListDB;Integrated Security=True;";
+
         public Form1()
         {
+
             InitializeComponent();
+
 
 
             // The options are hidden by default until the checkbox of a Truck or SUV are selected.
@@ -47,6 +52,7 @@ namespace CarListApp
         {
             // testing from GUI, added function for thinking
         }
+
 
         private void AddCar_Click(object? sender, EventArgs e) // The Event Handler works well!
         {
@@ -187,6 +193,9 @@ namespace CarListApp
             ClearForm();
         }
 
+    
+
+
         private void rioAutomatic_CheckedChanged(object sender, EventArgs e)
         {
             // radiobutton did not need any logic, but clicked on from GUI for testing
@@ -210,6 +219,12 @@ namespace CarListApp
             txtPrice.Text = "";
             rioManual.Checked = false; // radiobuttons are set to false as a reset
             rioAutomatic.Checked = false; // radiobutton reset!
+            rdoSUV.Checked = false;
+            rdoTruck.Checked = false;
+            cmbCondition.SelectedIndex = 0;
+            cmbTruckType.SelectedIndex = 0;
+            cmbDrivetrain.SelectedIndex = 0;
+
         }
 
         private void chkTruckSUV_CheckedChanged(object? sender, EventArgs e)
@@ -293,6 +308,8 @@ namespace CarListApp
             // A simple if else statement handling the (check event) users interaction with the GUI application.
             if (!chkTruckSUV.Checked)
             {
+                lblTruckType.Visible=false;
+                lblCondition.Visible=false;
                 cmbDrivetrain.Visible = false; // Combination box will not show if the checkbox is unchecked
                 lblDrivetrain.Visible = false; // label does not show if the checkbox is not checked for a TRUCK or SUV
             }
